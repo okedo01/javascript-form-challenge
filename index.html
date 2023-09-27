@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Challenge</title>
+  </head>
+  <body>
+    <p class="instruction">
+      Instructions: Using css and JS modify the form as follows. Only display
+      the review text box if the user selects "Yes". Hide the thank you message
+      until form has been submitted.
+    </p>
+    <form>
+      <label>Would you like to us leave a review? </label>
+      <div class="radio">
+        <label><input type="radio" name="review" value="Yes" />Yes</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="review" value="No" />No</label>
+      </div>
+      <!-- Step 1. Hide the review text box unless user selects "Yes" -->
+      <div class="textarea">
+        <label>Great! Please leave your review here:</label>
+        <br />
+        <textarea cols="40" rows="10"></textarea>
+      </div>
+      <div class="button">
+        <button name="submit" type="submit">Submit</button>
+      </div>
+    </form>
+    <!-- Step 2. Hide the thank you message until the form has been submitted -->
+    <div>Thanks for your feedback! Have a great day.</div>
+    <script src="sandbox.js"></script>
+  </body>
+</html>
