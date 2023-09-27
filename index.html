@@ -15,10 +15,10 @@
     <form>
       <label>Would you like to us leave a review? </label>
       <div class="radio">
-        <label><input type="radio" name="review" value="Yes" />Yes</label>
+        <label for="yesOption"><input type="radio" name="review" id="yesOption" value="Yes" />Yes</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="review" value="No" />No</label>
+        <label for="noOption"><input type="radio" name="review" id="noOption" value="No" />No</label>
       </div>
       <!-- Step 1. Hide the review text box unless user selects "Yes" -->
       <div class="textarea">
@@ -31,7 +31,7 @@
       </div>
     </form>
     <!-- Step 2. Hide the thank you message until the form has been submitted -->
-    <div>Thanks for your feedback! Have a great day.</div>
+    <div class="feedback">Thanks for your feedback! Have a great day.</div>
     <script src="sandbox.js"></script>
   </body>
 </html>
