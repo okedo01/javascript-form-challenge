@@ -1,77 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
- 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #faebd7;
+}
 
-  *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+.instruction {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+}
 
-  body{
-    font-family: 'Roboto', sans-serif;;
-    font-size: 20px;
-    color: #faebd7;
-  }
+form {
+  display: grid;
+  place-items: center;
+  margin: 30px 0;
+  padding: 40px 0;
+  background: blue;
+}
 
-  .instruction{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    margin-top: 30px;
-    text-align: center;
-    color: hsl(0, 0%, 0%);
-  }
+label {
+  margin: 12px auto;
+}
 
-  form{
-    display: grid;
-    place-items: center;
-    margin: 30px 0;
-    padding: 40px 0;
-    background: blue;
-  }
+.radio {
+  margin: 4px auto;
+}
 
-  label{
-    margin: 12px auto;
-  }
+textarea {
+  font-size: 16px;
+}
 
-  .radio{
-    margin: 4px auto;
-  }
+.success {
+  border: 2px green solid;
+}
 
-  textarea{
-    font-size: 16px;
-  }
+.error {
+  border: 2px red solid;
+}
+button {
+  margin: 40px 0;
+  font-size: 20px;
+  padding: 7px;
+  font-weight: 600;
+}
 
-  .success{
-    border: 2px green solid;
-  }
+.feedback {
+  font-family: "Mooli", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: black;
+}
 
-  .error{
-    border: 2px red solid;
-  }
-  button{
-    margin: 40px 0;
-    font-size: 20px;
-    padding: 7px;
-    font-weight: 600;
-  }
+footer {
+  display: flex;
+  justify-content: end;
+  color: black;
+}
 
-  .feedback{
-    font-family: 'Mooli', sans-serif;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: black;
-  }
-
-  button:hover{
-    cursor: pointer;
-  }
-
- .radio input:hover{
+button:hover {
   cursor: pointer;
- }
+}
+
+.radio input:hover {
+  cursor: pointer;
+}

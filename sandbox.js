@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const reviewOptionYes = document.getElementById("yesOption");
     const reviewTextArea = document.querySelector(".textarea");
     const feedbackMessage = document.querySelector(".feedback");
-    const pattern = /[a-zA-Z]{6,}/
+    const feedbackInput = document.querySelector(".textarea textarea");
 
     reviewTextArea.style.display = "none";
     feedbackMessage.style.display = "none";
@@ -14,12 +14,21 @@ document.addEventListener("DOMContentLoaded", () => {
         reviewTextArea.style.display = "none";
       }
     });
-  
+
     const form = document.querySelector("form");
   
     form.addEventListener("submit", event => {
       event.preventDefault();
-      feedbackMessage.style.display = "block";
+
+      if (reviewOptionYes.checked && feedbackInput.value.trim() === "") {
+        setTimeout(() => {
+          alert("Please provide feedback in the textarea.");
+        }, 300)
+        
+      } else {
+       
+        feedbackMessage.style.display = "block";
+      }
     });
 
   });
